@@ -1,0 +1,20 @@
+function end(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  
+  
+  var words=str.split(' ');
+  var endChar=str.substr(str.length-1);
+  
+  if(words[words.length-1]===target){return true;}
+  
+  else if(endChar===target){
+    return true;
+  }else{
+    
+    return false;
+  }
+  
+}
+
+end('Bastian is good', 'good');
