@@ -1,0 +1,16 @@
+function slasher(arr, howMany) {
+  // it doesn't always pay to be first
+  newArr=[];
+  finalArr=[];
+  
+  if(howMany<arr.length){
+    
+    newArr=arr.slice(0,howMany);
+    len=newArr.length;
+    finalArr=arr.splice(len,arr.length);
+  }
+  
+  return finalArr;
+}
+
+slasher([1, 2, 3], 2);
